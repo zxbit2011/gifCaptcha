@@ -1,11 +1,13 @@
-# gifCaptcha
-> gif 验证码
-# 支持
-* 自定义大小
-* 自定义颜色
-* 自定义字体
-# 示例代码
-````
+package gifCaptcha
+
+import (
+	"github.com/labstack/echo"
+	"image/color"
+	"image/gif"
+	"net/http"
+	"testing"
+)
+
 func TestGifCaptcha(t *testing.T) {
 	e := echo.New()
 	gifCaptcha := New()
@@ -21,9 +23,3 @@ func TestGifCaptcha(t *testing.T) {
 	})
 	e.Logger.Fatal(e.Start(":1323"))
 }
-````
-# 示例效果
-## 黑白
-![code](code.gif)
-## 彩色
-![code2](code2.gif)
