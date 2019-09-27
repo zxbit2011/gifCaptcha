@@ -1,9 +1,11 @@
 # gifCaptcha
-> gif 验证码
-# 支持
-* 自定义大小
-* 自定义颜色
-* 自定义字体
+> gif 图像验证码
+# 丰富自定义设置
+* 图片大小
+* 多颜色
+* 文字模式
+* 文字数量
+* 干扰强度
 # 示例代码
 ````
 func TestGifCaptcha(t *testing.T) {
@@ -27,3 +29,6 @@ func TestGifCaptcha(t *testing.T) {
 ![code](code.gif)
 ## 彩色
 ![code2](code2.gif)
+
+# 感谢
+https://github.com/afocus/captcha
