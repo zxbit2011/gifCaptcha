@@ -30,9 +30,10 @@ func main() {
     http.ListenAndServe(":8080", nil)
 }
 ````
-* 启动示例
+* 运行示例
 > cd examples && go run main.go
-* 浏览器访问
+* 浏览器预览
+
 http://127.0.0.1:8080/img
 # 示例效果
 ## 黑白
