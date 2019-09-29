@@ -1,6 +1,6 @@
 ![logo](logo.svg)
 # gifCaptcha
-> gif 图像验证码
+> gif 图形验证码
 # 丰富自定义设置
 * 图片大小
 * 多颜色
