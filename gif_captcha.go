@@ -46,7 +46,7 @@ const (
 
 func New() *GifCaptcha {
 	c := &GifCaptcha{
-		disturbLevel: NORMAL,
+		disturbLevel: MEDIUM,
 		size:         image.Point{X: 128, Y: 48},
 		delay:        40,
 		frame:        30,
@@ -218,7 +218,7 @@ func (c *GifCaptcha) getNoises() (dot, line [][]int) {
 		h := ra.Intn(size.Y/10) * o
 		/*colorIndex := ra.Intn(len(c.frontColors))
 		img.DrawLine(x, y, x+w, y+h, c.frontColors[colorIndex])
-*/
+		*/
 		arr := []int{x, y, x + w, y + h}
 		line = append(line, arr)
 	}
@@ -299,7 +299,7 @@ func (c *GifCaptcha) createGif(str string) *gif.GIF {
 	}
 	// 用于生成随机角度
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
-	frontColor:=c.frontColors[r.Intn(len(c.frontColors))]
+	frontColor := c.frontColors[r.Intn(len(c.frontColors))]
 	for i := 0; i < c.frame; i++ {
 		tmp := c.drawString(str, dot, line, frontColor)
 		img := NewImage(c.size.X, c.size.Y)
