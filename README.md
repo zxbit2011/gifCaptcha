@@ -7,6 +7,10 @@
 * 文字模式
 * 文字数量
 * 干扰强度
+# 快速使用
+````
+> go get github.com/zxbit2011/gifCaptcha
+````
 # 示例代码
 ````
 package main
