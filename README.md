@@ -30,9 +30,10 @@ func main() {
     http.ListenAndServe(":8080", nil)
 }
 ````
-> go test main_test TestGifCaptcha
-
-> 图片访问：http://127.0.0.1:8080/img
+* 启动示例
+> cd examples && go run main.go
+* 浏览器访问
+http://127.0.0.1:8080/img
 # 示例效果
 ## 黑白
 ![code](code.gif)
