@@ -38,7 +38,8 @@ func main() {
 * 运行示例
 > cd examples && go run main.go
 * 浏览器预览
-
+# 注意
+`需提供字体文件examples/comic.ttf 默认路径放到根目录`
 http://127.0.0.1:8080/img
 # 示例效果
 ## 黑白
