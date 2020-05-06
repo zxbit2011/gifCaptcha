@@ -276,6 +276,13 @@ func (c *GifCaptcha) RangCaptcha() (gifData *gif.GIF, str string) {
 }
 
 // Create 生成一个验证码图片
+func (c *GifCaptcha) RangCaptchaType(strType StrType) (gifData *gif.GIF, str string) {
+	str = string(c.randStr(4, int(strType)))
+	gifData = c.createGif(str)
+	return
+}
+
+// Create 生成一个验证码图片
 func (c *GifCaptcha) Create(num int, t StrType) (gifData *gif.GIF, str string) {
 	if num <= 0 {
 		num = 4
